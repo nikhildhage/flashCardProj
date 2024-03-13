@@ -1,4 +1,4 @@
-<?php $number=filter_input(INPUT_GET, "num", FILTER_SANITIZE_NUMBER_INT)?>;
+<?php $number=filter_input(INPUT_GET, "num", FILTER_SANITIZE_NUMBER_INT);?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
