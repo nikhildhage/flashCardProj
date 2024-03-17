@@ -1,4 +1,6 @@
-<?php $number=filter_input(INPUT_GET, "num", FILTER_SANITIZE_NUMBER_INT);?>
+<?php 
+    $number=filter_input(INPUT_GET, 'number', FILTER_SANITIZE_NUMBER_INT);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +12,20 @@
 <body>
     <?php include("view/header.php");?>
         <?php
+        echo "Number: " . $number;
             if($number)
+            {
+                echo "Results page loaded";
                 include("view/results.php");
-            else
-                include("view/form.php"); 
+               
+            }
+                
+            else {
+                echo "Form page loaded";
+                include("view/form.php");
+            }
+                 
         ?>
-    <?php include("view/footer.php")?>
+    <?php include("view/footer.php");?>
 </body>
 </html>
