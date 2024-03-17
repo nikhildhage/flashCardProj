@@ -19,7 +19,6 @@
                 include("view/results.php");
                
             }
-                
             else {
                 echo "Form page loaded";
                 include("view/form.php");
