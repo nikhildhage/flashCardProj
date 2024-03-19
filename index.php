@@ -14,12 +14,10 @@
         <?php
             if($number)
             {
-                echo "Results page loaded";
                 include("view/results.php");
                
             }
             else {
-                echo "Form page loaded";
                 include("view/form.php");
             }
                  
